@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mnie</title>
+</head>
+<body>
+    <div class="top">
+  <p class="ln">My Projects</p>
+  <p class="ln">Work experience & skills</p>
+  <p>About me</p>
+</div>
+
+<div class="info">
+    <div class="exp">
+      <h2>i'm Kinga Wit</h2>
+      <h1>Web Developer &<br>Ecommerce Specialist</h1>
+    </div>
+    <div class="btn">
+        <a>Contact</a>
+        <a>CV</a>
+    </div>
+</div>
+
+<div class="btns">
+  <a class="download" id="btn" href="">
+    <div class="imgs">
+      <img class="icon" src="https://github.com/KingaWit/img/blob/main/Download_icon.png?raw=true"/>   
+    </div>
+    <p class="txt">Download</p>
+  </a>
+   <a class="tel" id="btn" href="">
+    <div class="imgs">
+      <img class="icon" src="https://github.com/KingaWit/img/blob/main/Tel_icon.png?raw=true"/>
+    </div>
+    <p class="txt">+48725408836</p>
+  </a>
+   <a class="mail" id="btn" href="">
+    <div class="imgs">
+      <img class="icon" src="https://github.com/KingaWit/img/blob/main/Mail_icon.png?raw=true"/>
+    </div>
+    <p class="txt">kingawit1@o2.pl</p>
+  </a>
+</div>
+
+<div class="boxes">
+  <div class="box" id="box1">
+    <h3>My Projects</h3>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, similique culpa optio illo sapiente voluptates sequi maxime assumenda accusamus placeat, perspiciatis fuga, pariatur sunt. Consequatur, officia. Laudantium quia est iusto!</h4>
+  </div>
+  <div class="box" id="box2">
+    <h3>Work experiecne & skills</h3>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, similique culpa optio illo sapiente voluptates sequi maxime assumenda accusamus placeat, perspiciatis fuga, pariatur sunt. Consequatur, officia. Laudantium quia est iusto!</h4>
+  </div>
+  <div class="box" id="box3">
+    <h3>About me</h3>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, similique culpa optio illo sapiente voluptates sequi maxime assumenda accusamus placeat, perspiciatis fuga, pariatur sunt. Consequatur, officia. Laudantium quia est iusto!</h4>
+  </div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+  font-family:'questrial', Arial, Helvetica, sans-serif;
+}
+.top{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  color:#e9dcbd;
+  position:relative;
+  z-index:2;
+}
+.info{
+  z-index: 1;
+    top: 0px;
+    left:0px;
+    background-color: grey;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+}
+.exp{
+  top: 25%;
+  left: 45%;
+  position: relative;
+  transform: translate(-25%, -25%);
+  width: 50%;
+}
+.exp > h1{
+  color:#e9dcbd;
+}
+.exp > h2{
+  color:#e9dcbd;
+}
+.btn{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  top: 25%;
+  left: 40%;
+  position: relative;
+  transform: translate(-25%, -25%);
+  width: 30%;
+}
+.btn > a{
+  color:#e9dcbd;
+  background-color:#383f47;
+  border-radius:25px;
+  padding-top:10px;
+  padding-bottom:10px;
+  width:125px;
+  text-align:center;
+}
+.btns{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-top:444px;
+  background-color: #e9dcbd;
+  padding-top:5px;
+  padding-bottom:5px;
+  width:100%;
+}
+.btns > a{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.icon{
+  width:40px;
+  padding-right:10px;
+}
+.imgs{
+  width:40%;
+}
+.txt{
+  color: #383f47;
+  text-decoration:none;
+}
+.boxes{
+  background: repeating-linear-gradient(45deg, #9ac4f7, #383f47);
+  padding: 40px;
+}
+.box > h3{
+  color:#e9dcbd;
+  background-color:#383f47;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top:10px;
+  padding-bottom:40px;
+  width:250px;
+  text-align:center;
+  margin-bottom:0px;
+}
+.box > h4{
+  background-color: #e9dcbd;
+  color: #383f47;
+  border-radius:15px;
+  padding:20px;
+  text-align:justify;
+  margin-top:-30px;
+}
+</style>
+
+
+</body>
+</html>
