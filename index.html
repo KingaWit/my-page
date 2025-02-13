@@ -7,10 +7,15 @@
 </head>
 <body>
 <div class="top">
-  <p class="ln">My Projects</p>
-  <p class="ln">Work experience & skills</p>
-  <p class="ln">Contact</p>
-  <p>CV</p>
+  <a class="ln">My Projects</a>
+  <a class="ln">Work experience & skills</a>
+  <div class="ln" id="cnt" onclick="opn()">Contact
+    <div class="contactbox">
+      <a href="">tel: +48 725 408 836</a>
+      <a href="">e-mail: kingawit1@o2.pl</a>
+    </div>
+  </div>
+  <a>CV</a>
 </div>
 
 <div class="info">
@@ -19,7 +24,13 @@
       <h1>Web Developer &<br>Ecommerce Specialist</h1>
     </div>
     <div class="btn">
-        <a>Contact</a>
+      <div class="line">
+        <div class="cnbt" onclick="opn2()">Contact</div>
+        <div class="numbers">
+          <a class="radoslaw" href="">tel: +48 725 408 836</a>
+          <a href="">e-mail: kingawit1@o2.pl</a>
+        </div>
+        </div>
         <a>CV</a>
     </div>
 </div>
@@ -39,6 +50,30 @@
   </div>
 </div>
 
+<script>
+  const slidertop = document.querySelector('.top');
+    const contactTop = document.querySelector('.contactbox')
+  
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      slidertop.classList.add('sld');
+      contactTop.classList.add('sldact');
+    } else {
+      slidertop.classList.remove('sld');
+      contactTop.classList.remove('sldact');
+    }
+  };
+  
+  window.addEventListener('scroll', handleScroll);
+
+  function opn(){
+    document.querySelector(".contactbox").classList.toggle('active');
+  }
+  function opn2(){
+    document.querySelector(".numbers").classList.toggle('active');
+  }
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
@@ -57,15 +92,51 @@ body{
   z-index:2;
   width:100%;
   top:0px;
+  left:0px;
+  padding-top:10px;
+  padding-bottom:10px;
+  animation: BounceIn 1s;
 }
-.top > p{
+@keyframes BounceIn {
+      0% {
+        opacity: 0;
+        top:-40px;
+      }
+      100% {
+        opacity: 1;
+        top:0px;
+      }
+    }
+.top > a, #cnt{
   width: 25%;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .ln{
   border-right:2px solid #e9dcbd;
+  height:25px;
+}
+.contactbox{
+  display:none;
+  flex-direction:column;
+  padding-top:10px;
+  animation: BounceIn2 1s;
+}
+@keyframes BounceIn2 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+.contactbox > a{
+  color:#e9dcbd;  
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top:10px;
+  text-decoration: none;
 }
 .info{
   z-index: 1;
@@ -105,16 +176,52 @@ body{
     transform: translate(-25%, -25%);
     width: 30%;
 }
-.btn > a{
-  color:#e9dcbd;
-  background-color:#383f47;
-  border-radius:25px;
-  padding-top:10px;
-  padding-bottom:10px;
-  width:125px;
-  text-align:center;
+.btn > a, .cnbt{
+  align-items: center;
+    color: #e9dcbd;
+    background-color: #383f47;
+    border-radius: 15px;
+    width: 125px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    justify-content: center;
+    display: flex;
+    position:relative;
+    z-index:4;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.numbers{
+  display:none;
+  flex-direction:column;
+  background-color:#e9dcbd;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding:10px;
+  position:absolute;
+  margin-top:-10px;
+  z-index:3;
+  animation: BounceIn2 1s;
+}
+@keyframes BounceIn2 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+.numbers > a{
+  color:#383f47;  
   font-size: 1.2rem;
   font-weight: 400;
+  margin-top:10px;
+  text-decoration: none;
+}
+.radoslaw{
+  padding-top:5px;
 }
 .boxes{
   padding: 40px;
@@ -126,9 +233,11 @@ body{
   border-top-right-radius: 15px;
   padding-top:10px;
   padding-bottom:40px;
-  width:250px;
+  width:280px;
   text-align:center;
   margin-bottom:0px;
+  font-weight:400;
+  font-size:1.4rem;
 }
 .box > h4{
   background-color: #e9dcbd;
@@ -137,6 +246,20 @@ body{
   padding:20px;
   text-align:justify;
   margin-top:-30px;
+  font-weight:400;
+  font-size:1.2rem;
+}
+.active{
+  display:flex;
+}
+.sld{
+  background-color:#505f72;
+}
+.sldact{
+  border-bottom-right-radius: 15px;
+    background-color: #505f72;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 25px;
 }
 </style>
 
