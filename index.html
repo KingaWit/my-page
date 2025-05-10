@@ -6,6 +6,9 @@
     <title>O mnie</title>
 </head>
 <body>
+
+ 
+
 <div class="top">
   <a class="ln">My Projects</a>
   <a class="ln">Work experience & skills</a>
@@ -19,6 +22,166 @@
 </div>
 
 <div class="info">
+  <svg class="blobCont">
+    <defs>
+      <!-- Filtr gooey mocniejszy -->
+      <filter id="gooey">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="25" result="blur" />
+        <feColorMatrix in="blur" mode="matrix"
+          values="1 0 0 0 0  
+                  0 1 0 0 0  
+                  0 0 1 0 0  
+                  0 0 0 40 -15" result="goo" />
+      </filter>
+  
+      <mask id="mask">
+        <g filter="url(#gooey)">
+          <!-- 30 blobów w grupach z animacją -->
+          <!-- Można dodać więcej, kopiując poniższe grupy -->
+  
+          <!-- Przykładowa grupa -->
+          <g class="blobGroup" transform="rotate(0)">
+            <circle cx="10%" cy="10%" r="70" fill="white" />
+          </g>
+  
+          <g class="blobGroup" transform="rotate(0)">
+              <circle cx="10%" cy="10%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="10%" cy="10%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="20%" cy="20%" r="50" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="30%" cy="15%" r="80" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="40%" cy="30%" r="60" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="50%" cy="50%" r="90" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="60%" cy="40%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="70%" cy="60%" r="50" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="50%" cy="90%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="20%" cy="40%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="60%" cy="40%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="80%" cy="60%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="22%" cy="40%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="70%" cy="20%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="67%" cy="45%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="23%" cy="10%" r="70" fill="white" />
+            </g>
+          <g class="blobGroup">
+            <circle cx="20%" cy="20%" r="50" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="30%" cy="15%" r="80" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="40%" cy="30%" r="60" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="50%" cy="50%" r="90" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="60%" cy="40%" r="70" fill="white" />
+          </g>
+          <g class="blobGroup" transform="rotate(0)">
+              <circle cx="50%" cy="90%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="20%" cy="40%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="60%" cy="40%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="80%" cy="60%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="22%" cy="40%" r="70" fill="white" />
+            </g>
+            <g class="blobGroup" transform="rotate(0)">
+              <circle cx="70%" cy="20%" r="70" fill="white" />
+            </g>
+          <g class="blobGroup">
+            <circle cx="70%" cy="60%" r="50" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="80%" cy="20%" r="100" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="90%" cy="70%" r="60" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="25%" cy="80%" r="75" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="35%" cy="25%" r="55" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="45%" cy="75%" r="65" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="55%" cy="30%" r="90" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="65%" cy="85%" r="45" fill="white" />
+          </g>
+          <g class="blobGroup">
+            <circle cx="75%" cy="50%" r="85" fill="white" />
+          </g>
+          <g class="blobGroup">
+              <circle cx="45%" cy="75%" r="65" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="25%" cy="15%" r="65" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="35%" cy="25%" r="65" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="80%" cy="65%" r="65" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="90%" cy="35%" r="65" fill="white" />
+            </g>
+            <g class="blobGroup">
+              <circle cx="76%" cy="90%" r="65" fill="white" />
+            </g>
+          <!-- Możesz dodać więcej blobów tak samo -->
+        </g>
+      </mask>
+    </defs>
+  
+    <!-- Obrazek z maską -->
+    <rect width="100%" height="100%" fill="#9fbca1" mask="url(#mask)" />
+  </svg>
+  <div class="expinfo">
+    <div class="myimg">
+      <img src="https://github.com/KingaWit/img/blob/main/Projekt%20bez%20nazwy%20(5).png?raw=true"/>
+    </div>
     <div class="exp">
       <h2>i'm Kinga Wit</h2>
       <h1>Web Developer &<br>Ecommerce Specialist</h1>
@@ -33,19 +196,65 @@
         </div>
         <a>CV</a>
     </div>
+  </div>
 </div>
 
 <div class="boxes">
   <div class="box" id="box1">
     <h3>My Projects</h3>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, similique culpa optio illo sapiente voluptates sequi maxime assumenda accusamus placeat, perspiciatis fuga, pariatur sunt. Consequatur, officia. Laudantium quia est iusto!</h4>
+    <div class="infobox">
+    <h4>Here you will find the latest pages I've coded.</h4>
+    <a href="https://www.collatris.pl" target="_blank">www.collatris.pl</a>
+    <a href="https://www.d-vitum.pl" target="_blank">www.d-vitum.pl</a>
+    <a href="https://www.oleovet.pl" target="_blank">www.oleovet.pl</a>
+    <a href="https://www.oleofarm24.pl/Kalendarz-adwentowy-clinks-pol-48.html" target="_blank">Advent Calendar promotion 2023</a>
+    <a href="https://www.oleofarm24.pl/Kalendarz-adwentowy-ccms-pol-53.html" target="_blank">Advent Calendar promotion 2024</a>
+  </div>
   </div>
   <div class="box" id="box2">
     <h3>Work experiecne & skills</h3>
-    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, similique culpa optio illo sapiente voluptates sequi maxime assumenda accusamus placeat, perspiciatis fuga, pariatur sunt. Consequatur, officia. Laudantium quia est iusto!</h4>
+    <h4>Here you will find information about my professional experience and the technologies I have worked with.</h4>
+    <div class="infobox">
+    <h4>
+      HTML
+      CSS
+      SCSS
+      XML / XSLT
+      JavaScript
+      PHP
+      Bootstrap
+      SEO
+      Screaming Frog
+      Visual Studio Code
+      IdoSell
+      IdoSell Composer
+      Wordperss
+      WooCommerce
+      Baselinker
+      SellAsist
+      Presta Shop
+      Sellingo
+      Shoper
+      Google Merchant Center
+      Google Tag Manager
+      Google Search Console
+      Google Analytics
+      Google ADS
+      Google Keyword Planner
+      Subiekt GT
+      Comarch Optima
+      Adobe Photoshop 
+      Adobe Lightroom
+      Firmao CRM
+      Ifirma
+      IFS
+      </h4>
+  </div>
   </div>
   <div class="box" id="box3">
     <h3>About me</h3>
+    <h4>Here you will find information about me and my interests.</h4>
+    <div class="infobox">
     <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, similique culpa optio illo sapiente voluptates sequi maxime assumenda accusamus placeat, perspiciatis fuga, pariatur sunt. Consequatur, officia. Laudantium quia est iusto!</h4>
   </div>
 </div>
@@ -80,14 +289,11 @@
 *{
   font-family:'questrial', Arial, Helvetica, sans-serif;
 }
-body{
-  background: repeating-linear-gradient(45deg, #9ac4f7, #383f47);
-}
 .top{
   display:flex;
   flex-direction:row;
   justify-content: space-around;
-  color:#e9dcbd;
+  color:#486370;
   position:fixed;
   z-index:2;
   width:100%;
@@ -96,6 +302,11 @@ body{
   padding-top:10px;
   padding-bottom:10px;
   animation: BounceIn 1s;
+  background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 @keyframes BounceIn {
       0% {
@@ -114,7 +325,7 @@ body{
   font-weight: 400;
 }
 .ln{
-  border-right:2px solid #e9dcbd;
+  border-right:2px solid #486370;
   height:25px;
 }
 .contactbox{
@@ -132,7 +343,7 @@ body{
       }
     }
 .contactbox > a{
-  color:#e9dcbd;  
+  color:#486370;  
   font-size: 1.2rem;
   font-weight: 400;
   margin-top:10px;
@@ -140,28 +351,44 @@ body{
 }
 .info{
   z-index: 1;
-    top: -20px;
     left: -25px;
-    background-color: grey;
-    height: 500px;
+    height: 100vh;
     position: relative;
     width: 100vw;
 }
-.exp{
-  top: 35%;
-  left: 50%;
-  position: relative;
-  transform: translate(-25%, -25%);
-  width: 50%;
+.myimg > img{
+  position: absolute;
+    width: 170px;
+    border-radius: 100%;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 3%);
+    opacity: 0.9;
+}
+.expinfo{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 65px 40px 20px 40px;
+    color: #000;
 }
 .exp > h1{
-  color: #e9dcbd;
+  color: #486370;
     font-weight: 600;
     font-size: 2.4rem;
     margin-top: 0px;
 }
 .exp > h2{
-  color: #e9dcbd;
+  color: #486370;
     font-weight: 400;
     font-size: 1.4rem;
     margin-bottom: 5px;
@@ -170,20 +397,15 @@ body{
   display: flex;
     flex-direction: row;
     justify-content: space-between;
-    top: 32%;
-    left: 45%;
-    position: relative;
-    transform: translate(-25%, -25%);
-    width: 30%;
 }
 .btn > a, .cnbt{
   align-items: center;
-    color: #e9dcbd;
-    background-color: #383f47;
+    color: #d4d4cb;
+    background-color: #486370;
     border-radius: 15px;
-    width: 125px;
+    width: 150px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     justify-content: center;
     display: flex;
@@ -195,7 +417,7 @@ body{
 .numbers{
   display:none;
   flex-direction:column;
-  background-color:#e9dcbd;
+  background-color:#486370;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -214,7 +436,7 @@ body{
       }
     }
 .numbers > a{
-  color:#383f47;  
+  color: #d4d4cb;
   font-size: 1.2rem;
   font-weight: 400;
   margin-top:10px;
@@ -227,8 +449,8 @@ body{
   padding: 40px;
 }
 .box > h3{
-  color:#e9dcbd;
-  background-color:#383f47;
+  color:#486370;
+  background-color:#486370;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding-top:10px;
@@ -240,8 +462,8 @@ body{
   font-size:1.4rem;
 }
 .box > h4{
-  background-color: #e9dcbd;
-  color: #383f47;
+  background-color: #486370;
+  color: #486370;
   border-radius:15px;
   padding:20px;
   text-align:justify;
@@ -254,13 +476,64 @@ body{
 }
 .sld{
   background-color:#505f72;
+  color:#d4d4cb;
 }
 .sldact{
   border-bottom-right-radius: 15px;
     background-color: #505f72;
     padding-bottom: 20px;
     border-bottom-left-radius: 25px;
+    color:#d4d4cb;
 }
+
+
+    .blobCont {
+      border-bottom-right-radius: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    border-bottom-left-radius: 100px;
+    box-shadow: 0px 5px 20px #80808040;
+}
+
+    g.blobGroup {
+      transform-origin: center;
+    }
+
+    /* Animacja rotacji z ruchem w kółko */
+    @keyframes rotateBlob {
+      from {
+        transform: rotate(0deg) translate(120px) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translate(120px) rotate(-360deg);
+      }
+    }
+
+    /* Styl animacji – różne opóźnienia, kierunki */
+    .blobGroup {
+      animation: rotateBlob 10s linear infinite;
+    }
+
+    /* Aby każdy blob miał inne opóźnienie / wariację */
+    .blobGroup:nth-child(odd) {
+      animation-duration: 25s;
+    }
+    .blobGroup:nth-child(even) {
+      animation-duration: 18s;
+    }
+    .blobGroup:nth-child(3n) {
+      animation-direction: reverse;
+    }
+
+    .sldact > a{
+      color: #d4d4cb;
+    }
+    .sld > .ln{
+      border-right: 2px solid #d4d4cb;
+    }
 </style>
 
 </body>
